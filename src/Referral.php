@@ -31,4 +31,12 @@ class Referral extends Model
     {
         return $this->belongsTo(config('referral.user_model', 'App\User'), 'referral_id');
     }
+    
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function referral()
+    {
+        return $this->belongsTo(config('referral.user_model', 'App\User'), 'referrer_id');
+    }
 }
