@@ -48,6 +48,14 @@ trait UserAffiliate
     {
         return $this->hasMany(Referral::class, 'referrer_id');
     }
+    
+     /**
+     * @return mixed
+     */
+    public function referrer()
+    {
+        return $this->hasOne(Referral::class, 'referral_id');
+    }
 
     protected static function bootUserAffiliate()
     {
