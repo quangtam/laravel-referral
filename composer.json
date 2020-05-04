@@ -1,18 +1,22 @@
 {
-    "name": "questocat/laravel-referral",
+    "name": "quangtam/laravel-referral",
     "description": "A Referral System With Laravel",
     "keywords": ["referral", "referral-system", "affiliate-tracking"],
     "license": "MIT",
     "authors": [{
         "name": "questocat",
         "email": "zhengchaopu@gmail.com"
+    },
+    {
+        "name": "Quang Tam Vu",
+        "email": "quangtamvu@gmail.com"
     }],
     "require": {
         "php": ">=7.0",
         "ramsey/uuid": "^3.8"
     },
     "require-dev": {
-        "laravel/laravel": "^5.5",
+        "laravel/laravel": "^6.0",
         "mockery/mockery": "~0.9",
         "phpunit/phpunit": "^6"
     },
