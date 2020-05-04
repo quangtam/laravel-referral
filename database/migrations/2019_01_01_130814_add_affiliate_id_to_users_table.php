@@ -21,7 +21,7 @@ class AddAffiliateIdToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('affiliate_id')->unique();
+            $table->string('affiliate_id')->nullable()->unique();
         });
     }
 
